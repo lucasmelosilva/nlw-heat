@@ -1,7 +1,5 @@
-import { Request, Response } from 'express';
-import { CreateMessageService } from '../services/CreateMessageService';
-
-
+import { Request, Response } from "express";
+import { CreateMessageService } from "../services/CreateMessageService";
 
 class CreateMessagecontroller {
   async handle(req: Request, res: Response) {
@@ -10,17 +8,9 @@ class CreateMessagecontroller {
     const { user_id } = req;
 
     const service = new CreateMessageService();
-    try {
-      const result = await service.execute(message, user_id)
-      return res.json(result)
-    } catch (err) {
-      return res.json(err.message)
-    }
-
-
-
-
+    const result = await service.execute(message, user_id);
+    return res.json(result);
   }
 }
 
-export { CreateMessagecontroller }
+export { CreateMessagecontroller };
