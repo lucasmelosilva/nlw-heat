@@ -34,6 +34,8 @@ function MessageList() {
           prevState[0],
           prevState[1],
         ].filter(Boolean))
+
+        messagesQueue.shift()
       }
     }, 3000)
   }, [])
