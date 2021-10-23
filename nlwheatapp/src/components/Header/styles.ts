@@ -11,9 +11,16 @@ export const styles = StyleSheet.create({
     fontSize: 20,
   },
 
+  logoutButton: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
   logoutText: {
     color: COLORS.GRAY_TERTIARY,
     fontSize: 15,
     fontFamily: FONTS.REGULAR,
+    marginRight: 20
   },
 });
