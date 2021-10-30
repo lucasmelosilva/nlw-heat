@@ -14,7 +14,7 @@ export function Header() {
       <LogoSvg />
 
       <View style={styles.logoutButton}>
-        <TouchableOpacity>
+        <TouchableOpacity activeOpacity={0.7}>
           <Text style={styles.logoutText}>Sair</Text>
         </TouchableOpacity>
 
