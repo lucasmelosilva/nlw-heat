@@ -21,6 +21,7 @@ export function MessageList() {
     <ScrollView 
       style={styles.container}
       contentContainerStyle={styles.content}
+      keyboardShouldPersistTaps="never"
     >
       <Message data={message} />
       <Message data={message} />
